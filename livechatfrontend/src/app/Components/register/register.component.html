@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-6 offset-3 mt-4">
+
+        <h1>Register New Account</h1>
+
+        <form #f="ngForm"
+              (ngSubmit)="onSubmit(f)">
+            <div class="form-group"
+                 style="padding-bottom: 10px;">
+                <label for="registerUsername">Username</label>
+                <input type="text"
+                       name="username"
+                       ngModel
+                       required
+                       #username="ngModel"
+                       class="form-control"
+                       id="registerUsername"
+                       placeholder="Enter username">
+            </div>
+
+            <div class="form-group"
+                 style="padding-bottom: 10px;">
+                <label for="registerEmail">Email</label>
+                <input type="email"
+                       name="email"
+                       ngModel
+                       required
+                       #email="ngModel"
+                       class="form-control"
+                       id="registerEmail"
+                       placeholder="Enter email">
+            </div>
+
+            <div class="form-group"
+                 style="padding-bottom: 10px;">
+                <label for="registerPassword">Password</label>
+                <input type="password"
+                       name="password"
+                       ngModel
+                       required
+                       #password="ngModel"
+                       class="form-control"
+                       id="registerPassword"
+                       placeholder="Password">
+            </div>
+
+            <div class="form-group"
+                 style="padding-bottom: 10px;">
+                <a [routerLink]="['/login']">Already have an account?</a>
+            </div>
+
+            <button type="submit"
+                    [disabled]="f.invalid"
+                    class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>

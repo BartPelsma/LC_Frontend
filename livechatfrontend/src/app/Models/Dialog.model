@@ -1,0 +1,10 @@
+import { Time } from "@angular/common";
+import { Account } from "./Account.model";
+
+export interface Dialog {
+    DialogID: Int32Array;
+    Account1: Account;
+    Account: Account;
+    Status: string;
+    CreationDate: Time;
+}

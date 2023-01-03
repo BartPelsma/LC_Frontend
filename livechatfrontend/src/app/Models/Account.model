@@ -1,0 +1,6 @@
+export interface Account {
+    AccountID: Int32Array;
+    UserName: string;
+    Email: string;
+    Password: string;
+}
