@@ -1,9 +1,14 @@
-FROM node:lts-alpine AS build
+# Specify a base image
+FROM node:alpine
 
-COPY package*.json ./
+#Install some dependencies
+
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
-COPY . .
-RUN npm run build
+
+# Set up a default command
+CMD [ "npm","start" ]
 
 EXPOSE 80
 EXPOSE 9002
