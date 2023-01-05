@@ -1,5 +1,5 @@
 FROM node:lts-alpine AS build
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
@@ -7,3 +7,4 @@ RUN npm run build
 
 EXPOSE 80
 EXPOSE 9002
+
