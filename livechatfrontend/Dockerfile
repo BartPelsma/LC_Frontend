@@ -1,5 +1,5 @@
 FROM node:lts-alpine AS build
-WORKDIR /app
+WORKDIR /livechatfrontend
 COPY package*.json ./
 RUN npm install
 COPY . .
