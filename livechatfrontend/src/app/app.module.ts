@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './Components/home/home.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { LayoutComponent } from './Shared/layout/layout.component';
+import { DialogComponent } from './Components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LayoutComponent } from './Shared/layout/layout.component';
     HomeComponent,
     RegisterComponent,
     LayoutComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,

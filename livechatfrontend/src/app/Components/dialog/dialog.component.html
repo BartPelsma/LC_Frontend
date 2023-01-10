@@ -1,0 +1,20 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group" style="padding-bottom: 10px;">
+    <label for="message">Message</label>
+
+    <input type="text" name="message" ngModel required #email="ngModel" class="form-control" id="message"
+      placeholder="Enter message">
+  </div>
+
+  <button type="submit" [disabled]="f.invalid" class="btn btn-primary">send <i class="fas fa-sign-in-alt"></i></button>
+</form>
+
+
+
+
+<div *ngFor="let message of responses">
+
+<h5>{{message}}</h5>
+
+
+</div>

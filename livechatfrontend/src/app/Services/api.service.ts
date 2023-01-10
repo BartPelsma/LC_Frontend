@@ -9,7 +9,7 @@ import { Dialog } from '../Models/dialog';
 })
 export class APIService {
 
-  authUrl = "https://localhost:7032/"
+  authUrl = "http://localhost:5260/"
   helper = new JwtHelperService();
   decodedToken: any;
 
